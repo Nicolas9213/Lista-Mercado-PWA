@@ -1,0 +1,36 @@
+index.jsx
+import {  } from "react";
+import './ToDoList.css';
+
+function ToDoList() {
+    return (
+        <div className="TodoList">
+            <div className="Header">
+                <h1 className="title">Lista de Tarefas</h1>
+                <Theme/>
+            </div>
+            <div className="Task">
+                <input type="text" placeholder="Adicionar tarefa"/>
+                <button className="button">Add</button>
+            </div>
+            <DeliveryStatus/>
+        </div>
+    )
+}
+
+export default ToDoList;
+=====================================
+app.jsx
+import { useState } from 'react'
+import React from 'react';
+import ToDoList from './components/ToDoList';
+
+const App = () => {
+  
+  return <div>
+    <ToDoList/>
+  </div>;
+};
+
+export default App;
+==============================
